@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the AI Profit Boardroom to scale your NEMT business with predictive dispatching, automated lead generation, and AI-driven route optimization. HIPAA-compliant solutions for transportation providers.">
+    <title>AI Profit Boardroom | Scale Your NEMT Business with Predictive Automation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #0f172a;
+            --secondary: #3b82f6;
+            --accent: #10b981;
+            --text: #1e293b;
+            --light: #f8fafc;
+            --gradient: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-cta {
+            background: var(--gradient);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+        }
+        
+        .nav-cta:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            background: var(--gradient);
+            color: white;
+            padding: 6rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 50%;
+            filter: blur(80px);
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+        
+        .hero-subheadline {
+            font-size: 1.35rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+            border: 2px solid var(--accent);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 35px -10px rgba(16, 185, 129, 0.5);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid rgba(255,255,255,0.3);
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: white;
+        }
+        
+        .hero-visual {
+            position: relative;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .dashboard-preview {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            color: var(--text);
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+        }
+        
+        .preview-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+            align-items: center;
+        }
+        
+        .metric-label {
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+        
+        .metric-value {
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: var(--secondary);
+            width: 85%;
+            border-radius: 4px;
+        }
+        
+        /* Problem Section */
+        .problem {
+            padding: 6rem 0;
+            background: var(--light);
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .section-subhead {
+            font-size: 1.25rem;
+            color: #64748b;
+        }
+        
+        .pain-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .pain-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            border-left: 4px solid #ef4444;
+            transition: transform 0.3s;
+        }
+        
+        .pain-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .pain-card p {
+            color: #64748b;
+            line-height: 1.8;
+        }
+        
+        .stat-highlight {
+            color: #ef4444;
+            font-weight: 700;
+            font-size: 1.25rem;
+            display: block;
+            margin: 0.5rem 0;
+        }
+        
+        /* Solution Section */
+        .solution {
+            padding: 6rem 0;
+            background: white;
+        }
+        
+        .pillars {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+        
+        .pillar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .pillar:nth-child(even) {
+            direction: rtl;
+        }
+        
+        .pillar:nth-child(even) > * {
+            direction: ltr;
+        }
+        
+        .pillar-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .pillar-number {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+        
+        .feature-list li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #475569;
+        }
+        
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .pillar-visual {
+            background: var(--light);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pillar-visual::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%);
+        }
+        
+        /* Social Proof */
+        .social-proof {
+            padding: 6rem 0;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+        }
+        
+        .social-proof h2 {
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: left;
+        }
+        
+        .testimonial {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .testimonial-text {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            opacity: 0.95;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .author-info h4 {
+            color: white;
+            margin-bottom: 0.25rem;
+        }
+        
+        .author-info p {
+            color: #94a3b8;
+            font-size: 0.875rem;
+        }
+        
+        .results-bar {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin: 4rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .result-item {
+            text-align: center;
+        }
+        
+        .result-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+        }
+        
+        .result-label {
+            color: #94a3b8;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+        }
+        
+        /* Implementation Section */
+        .implementation {
+            padding: 6rem 0;
+            background: var(--light);
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .step-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            position: relative;
+            transition: transform 0.3s;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 2rem;
+            background: var(--secondary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        
+        .security-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 0;
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .cta-section h2 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .cta-section p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        
+        .guarantee {
+            margin-top: 2rem;
+            font-size: 0.875rem;
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 6rem 0;
+            background: white;
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e2e8f0;
+            padding: 2rem 0;
+        }
+        
+        .faq-question {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            color: #64748b;
+            line-height: 1.8;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: #94a3b8;
+            padding: 3rem 0;
+            text-align: center;
+            font-size: 0.875rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-grid,
+            .pillar {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .pillar:nth-child(even) {
+                direction: ltr;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .results-bar {
+                gap: 2rem;
+            }
+            
+            .testimonials {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">AI Profit <span>Boardroom</span></a>
+            <a href="#join" class="nav-cta">Join Now</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content animate">
+                    <h1>Scale Your NEMT Business with the AI Profit Boardroom: Turn Predictive Automation into Record Profits</h1>
+                    <p class="hero-subheadline">Move from reactive manual dispatching to a proactive, AI-driven powerhouse that increases driver utilization to over 85% while 10Xing your lead pipeline.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">85%</span>
+                            <span class="stat-label">Fleet Utilization</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10X</span>
+                            <span class="stat-label">Lead Growth</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">40%</span>
+                            <span class="stat-label">Cost Reduction</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-group">
+                        <a href="#join" class="btn-primary">Join the AI Profit Boardroom Today</a>
+                        <a href="#audit" class="btn-secondary">Request Your AI Growth Audit</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual animate delay-1">
+                    <div class="dashboard-preview">
+                        <div class="preview-header">
+                            <strong>AI Command Center</strong>
+                            <span style="color: #10b981; font-size: 0.875rem;">● Live</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">Driver Efficiency</span>
+                            <span class="metric-value">87.3%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        
+                        <div class="metric-row" style="margin-top: 1.5rem;">
+                            <span class="metric-label">Active AI Leads</span>
+                            <span class="metric-value">142</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">Route Optimization</span>
+                            <span class="metric-value">$3,240 saved</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">Predictive Matches</span>
+                            <span class="metric-value">98.2% accuracy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="bottleneck">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Manual NEMT Operations Are The Bottleneck to Your Growth</h2>
+                <p class="section-subhead">The transportation industry is evolving. While you're managing spreadsheets, competitors are using AI-driven route optimization and predictive dispatching to capture your market share.</p>
+            </div>
+            
+            <div class="pain-points">
+                <div class="pain-card">
+                    <h3>The Cost of Reactive Dispatching</h3>
+                    <span class="stat-highlight">Losing 15%–25% of revenue</span>
+                    <p>Stop hemorrhaging profits to fuel waste and inefficient routing. Without predictive demand reallocation, your fleet sits idle while gas expenses mount. Manual dispatching can't anticipate the dialysis center rush or reposition vehicles for maximum NEMT fleet utilization software efficiency.</p>
+                </div>
+                
+                <div class="pain-card">
+                    <h3>The Referral Leakage Crisis</h3>
+                    <span class="stat-highlight">Losing up to 65% of potential patient revenue</span>
+                    <p>Manual intake processes are causing catastrophic patient conversion rate optimization failures. When facilities call after hours, you miss opportunities. Without HIPAA-compliant AI chatbots, qualified leads vanish into voicemail black holes while your competitors scale NEMT without hiring additional staff.</p>
+                </div>
+                
+                <div class="pain-card">
+                    <h3>Administrative Exhaustion</h3>
+                    <span class="stat-highlight">Trapped in data silos</span>
+                    <p>Your team is drowning in paperwork instead of building healthcare partnerships. Manual billing creates rejections, delayed cash flow, and NEMT revenue leakage. You need automated NEMT billing and claims processing to free your team for strategic growth, not data entry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="boardroom">
+        <div class="container">
+            <div class="section-header">
+                <h2>Inside the Boardroom: Master the 3 Pillars of AI-Driven NEMT Growth</h2>
+                <p class="section-subhead">Join an exclusive community of transportation leaders leveraging predictive automation, AI lead management for transportation, and financial optimization.</p>
+            </div>
+            
+            <div class="pillars">
+                <!-- Pillar 1 -->
+                <div class="pillar">
+                    <div class="pillar-content">
+                        <span class="pillar-number">1</span>
+                        <h2>Operational Excellence through Predictive Dispatching</h2>
+                        <p>Transform your fleet from a cost center into a profit engine with machine learning algorithms that think 10 moves ahead.</p>
+                        
+                        <ul class="feature-list">
+                            <li><strong>Instant Driver-Patient Matching:</strong> Use AI to pair specific patient needs—like wheelchair accessibility or bariatric requirements—with the right vehicle in milliseconds, not minutes.</li>
+                            <li><strong>Anticipate the Peak:</strong> Implement predictive demand reallocation to reposition your fleet before the dialysis center rush begins, eliminating deadhead miles.</li>
+                            <li><strong>Eliminate Downtime:</strong> Deploy machine learning to predict appointment durations and schedule return trips with near-zero latency, maximizing billable hours.</li>
+                        </ul>
+                    </div>
+                    <div class="pillar-visual">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🎯</div>
+                        <h3 style="margin-bottom: 1rem;">85%+ Utilization Rate</h3>
+                        <p style="color: #64748b;">Real-time predictive dispatching for NEMT operations</p>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="pillar">
+                    <div class="pillar-content">
+                        <span class="pillar-number">2</span>
+                        <h2>Growth & Lead Management Smart Automation</h2>
+                        <p>Stop chasing leads. Let AI scan millions of data points to deliver qualified healthcare partnerships directly to your pipeline while you sleep.</p>
+                        
+                        <ul class="feature-list">
+                            <li><strong>10X Your Leads with AI Scanning:</strong> Our algorithms scan millions of data points to identify high-probability healthcare partners, dialysis centers, and facility contracts ready to switch providers.</li>
+                            <li><strong>The 24/7 Digital Front Door:</strong> Deploy HIPAA-compliant AI chatbots that qualify patient insurance, verify mobility needs, and book trips instantly—even at 3 AM.</li>
+                            <li><strong>Hyper-Personalized Outreach:</strong> Move beyond templates with AI that crafts unique messages based on a facility's specific challenges, increasing NEMT lead generation automation conversion by 300%.</li>
+                        </ul>
+                    </div>
+                    <div class="pillar-visual">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🚀</div>
+                        <h3 style="margin-bottom: 1rem;">10X Pipeline Growth</h3>
+                        <p style="color: #64748b;">Automated NEMT referral management automation</p>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="pillar">
+                    <div class="pillar-content">
+                        <span class="pillar-number">3</span>
+                        <h2>Financial Optimization & Revenue Recovery</h2>
+                        <p>Protect your margins with intelligent billing automation and reduce NEMT fuel expenses through algorithmic efficiency.</p>
+                        
+                        <ul class="feature-list">
+                            <li><strong>Slash Billing Rejections by 40%:</strong> Streamline claim submissions through AI-integrated billing to improve cash flow by weeks, not days. Eliminate NEMT revenue leakage prevention gaps.</li>
+                            <li><strong>Scale Without Hiring:</strong> Process hundreds of daily referrals and inquiries with zero additional administrative staff. Handle 3x volume with your current team.</li>
+                            <li><strong>Real-Time ROI Dashboards:</strong> Track lead quality, driver efficiency, and predictive forecasts to make data-driven decisions that maximize margins on every trip.</li>
+                        </ul>
+                    </div>
+                    <div class="pillar-visual">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">💰</div>
+                        <h3 style="margin-bottom: 1rem;">40% Cost Reduction</h3>
+                        <p style="color: #64748b;">Automate NEMT billing and claims processing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="container">
+            <h2>Trusted by NEMT Leaders Scaling to 8 Figures</h2>
+            <p style="opacity: 0.8; max-width: 600px; margin: 0 auto;">Join transportation providers who have replaced manual chaos with predictive automation.</p>
+            
+            <div class="results-bar">
+                <div class="result-item">
+                    <span class="result-number">$2.4M</span>
+                    <div class="result-label">Additional Revenue Generated</div>
+                </div>
+                <div class="result-item">
+                    <span class="result-number">15,000+</span>
+                    <div class="result-label">Trips Optimized Monthly</div>
+                </div>
+                <div class="result-item">
+                    <span class="result-number">98%</span>
+                    <div class="result-label">HIPAA Compliance Rate</div>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">"We reduced our fuel expenses by 32% in the first 90 days using the predictive demand reallocation strategies. The AI-driven route optimization alone paid for our membership three times over. We're now at 89% fleet utilization."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <h4>Marcus Rodriguez</h4>
+                            <p>CEO, Guardian Medical Transport, TX</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"The automated driver-patient matching transformed our overnight operations. We went from missing 40% of after-hours referral calls to capturing 98% with the HIPAA-compliant AI chatbot. Our lead pipeline tripled without adding staff."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SL</div>
+                        <div class="author-info">
+                            <h4>Sarah Lin</h4>
+                            <p>Operations Director, ComfortCare Mobility, FL</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"I was skeptical about AI until we saw the billing automation results. We cut claim rejections by 45% and improved our cash flow cycle by 22 days. The boardroom gave us the exact framework to implement this without disrupting operations."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DK</div>
+                        <div class="author-info">
+                            <h4>David Kimani</h4>
+                            <p>Founder, Unity Transit Solutions, GA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Section -->
+    <section class="implementation">
+        <div class="container">
+            <div class="section-header">
+                <h2>A Proven Framework for Implementation</h2>
+                <p class="section-subhead">No technical background required. We provide the roadmap, templates, and AI tools specifically designed for NEMT operators.</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h3>The 30-Day Quick Win</h3>
+                    <p>Start with automated lead scoring and assignment to see immediate pipeline movement. Deploy your first HIPAA-compliant AI chatbot within 48 hours using our pre-built templates.</p>
+                    <span class="security-badge">✓ HIPAA Ready</span>
+                </div>
+                
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h3>Phased Rollout Strategy</h3>
+                    <p>Move from basic automation to deep reinforcement learning for complex fleet-and-route integrated policies. Our staged approach ensures zero disruption to current operations.</p>
+                    <span class="security-badge">✓ Zero Downtime</span>
+                </div>
+                
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h3>Security & Compliance First</h3>
+                    <p>Every AI tool in your stack meets 100% HIPAA compliance and end-to-end encryption. We provide Business Associate Agreements (BAAs) and security audit documentation.</p>
+                    <span class="security-badge">✓ End-to-End Encryption</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="join">
+        <div class="container">
+            <h2>Ready to Outpace the Competition?</h2>
+            <p>Stop reacting to missed appointments and fuel costs. Start predicting demand, automating growth, and scaling your NEMT business with the AI Profit Boardroom.</p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary" style="font-size: 1.25rem; padding: 1.25rem 3rem;">Join the AI Profit Boardroom Today</a>
+                <a href="#" class="btn-secondary" id="audit" style="font-size: 1.25rem; padding: 1.25rem 3rem;">Request Your AI Growth Audit</a>
+            </div>
+            
+            <div class="guarantee">
+                <span>🔒</span>
+                <span>30-Day Money-Back Guarantee • Cancel Anytime • HIPAA Compliant Infrastructure</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need technical experience to implement these AI tools?</span>
+                        <span style="color: var(--secondary);">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No technical background required. The AI Profit Boardroom provides plug-and-play templates for NEMT lead generation automation, HIPAA-compliant AI chatbots, and predictive dispatching systems. Our members typically deploy their first automation within 48 hours using our step-by-step frameworks.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How quickly will I see ROI from AI-driven route optimization?</span>
+                        <span style="color: var(--secondary);">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most members see measurable fuel cost reductions within the first 30 days. Our predictive demand reallocation typically increases fleet utilization from industry averages of 60% to over 85% within 90 days. The automated NEMT billing and claims processing usually improves cash flow within the first billing cycle.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is this compliant with HIPAA and transportation regulations?</span>
+                        <span style="color: var(--secondary);">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Every tool and template in the Boardroom is built with 100% HIPAA compliance and end-to-end encryption. We provide Business Associate Agreements (BAAs), security audit documentation, and ensure all AI lead management for transportation meets federal healthcare privacy standards.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can AI really help me scale without hiring more dispatchers?</span>
+                        <span style="color: var(--secondary);">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Our automated driver-patient matching and 24/7 digital front door handle the volume of 3-4 full-time employees. One member processed 400% more trips with the same staff using our NEMT fleet utilization software and automated dispatch protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">HIPAA Compliance</a>
+                <a href="#">Contact Support</a>
+            </div>
+            <p>&copy; 2026 AI Profit Boardroom. All rights reserved.</p>
+            <p style="margin-top: 1rem; font-size: 0.75rem;">Disclaimer: Results may vary. The AI tools and strategies provided are designed to enhance operational efficiency and lead generation, but individual results depend on market conditions, implementation speed, and current business infrastructure.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.pain-card, .step-card, .pillar').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
